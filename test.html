@@ -312,15 +312,15 @@
                     aValueR = move;
                 }
                 aValueR = lt_code.getNum(aValueR);
-                aHR.style.left = (25 + aValueR / 255 * 100).toString() + "px";
-                aHTR.style.width = (aValueR / 255 * 100 + 3).toString() + "px";
+                aHR.style.left = lt_code.getNum(25 + aValueR / 255 * 100).toString() + "px";
+                aHTR.style.width = lt_code.getNum(aValueR / 255 * 100 + 3).toString() + "px";
                 aValueAll = "rgb(" + aValueR + "," + aValueG + "," + aValueB + ")";
                 ambientLight.color.set(aValueAll);
                 aAll.innerHTML = lt_code.color_change(aValueAll);
                 var acolor = lt_code.getAll2(".acolor", lt_code.getDomFather(aAll));
                 acolor.style.backgroundColor = aValueAll;
             }
-            aHR.onmouseleave = function () { aHR.onmousemove = function () { }; };
+            lt_code.getDomFather(aHR).onmouseleave = function () { aHR.onmousemove = function () { }; };
         }
         aHR.onmouseup = function () { aHR.onmousemove = function () { }; };
         aHG.onmousedown = function (e) {
@@ -339,15 +339,15 @@
                     aValueG = move;
                 }
                 aValueG = lt_code.getNum(aValueG);
-                aHG.style.left = (25 + aValueG / 255 * 100).toString() + "px";
-                aHTG.style.width = (aValueG / 255 * 100 + 3).toString() + "px";
+                aHG.style.left = lt_code.getNum(25 + aValueG / 255 * 100).toString() + "px";
+                aHTG.style.width = lt_code.getNum(aValueG / 255 * 100 + 3).toString() + "px";
                 aValueAll = "rgb(" + aValueR + "," + aValueG + "," + aValueB + ")";
                 ambientLight.color.set(aValueAll);
                 aAll.innerHTML = lt_code.color_change(aValueAll);
                 var acolor = lt_code.getAll2(".acolor", lt_code.getDomFather(aAll));
                 acolor.style.backgroundColor = aValueAll;
             }
-            aHG.onmouseleave = function () { aHG.onmousemove = function () { }; };
+            lt_code.getDomFather(aHG).onmouseleave = function () { aHG.onmousemove = function () { }; };
         }
         aHG.onmouseup = function () { aHG.onmousemove = function () { }; };
         aHB.onmousedown = function (e) {
@@ -366,15 +366,15 @@
                     aValueB = move;
                 }
                 aValueB = lt_code.getNum(aValueB);
-                aHB.style.left = (25 + aValueB / 255 * 100).toString() + "px";
-                aHTB.style.width = (aValueB / 255 * 100 + 3).toString() + "px";
+                aHB.style.left = lt_code.getNum(25 + aValueB / 255 * 100).toString() + "px";
+                aHTB.style.width = lt_code.getNum(aValueB / 255 * 100 + 3).toString() + "px";
                 aValueAll = "rgb(" + aValueR + "," + aValueG + "," + aValueB + ")";
                 ambientLight.color.set(aValueAll);
                 aAll.innerHTML = lt_code.color_change(aValueAll);
                 var acolor = lt_code.getAll2(".acolor", lt_code.getDomFather(aAll));
                 acolor.style.backgroundColor = aValueAll;
             }
-            aHB.onmouseleave = function () { aHB.onmousemove = function () { }; };
+            lt_code.getDomFather(aHB).onmouseleave = function () { aHB.onmousemove = function () { }; };
         }
         aHB.onmouseup = function () { aHB.onmousemove = function () { }; };
 
@@ -440,15 +440,15 @@
                     aValueR = move;
                 }
                 aValueR = lt_code.getNum(aValueR);
-                aHR.style.left = (25 + aValueR / 255 * 100).toString() + "px";
-                aHTR.style.width = (aValueR / 255 * 100 + 3).toString() + "px";
+                aHR.style.left = lt_code.getNum(25 + aValueR / 255 * 100).toString() + "px";
+                aHTR.style.width = lt_code.getNum(aValueR / 255 * 100 + 3).toString() + "px";
                 aValueAll = "rgb(" + aValueR + "," + aValueG + "," + aValueB + ")";
                 directionalLight.color.set(aValueAll);
                 aAll.innerHTML = lt_code.color_change(aValueAll);
                 var acolor = lt_code.getAll2(".acolor", lt_code.getDomFather(aAll));
                 acolor.style.backgroundColor = aValueAll;
             }
-            aHR.onmouseleave = function () { aHR.onmousemove = function () { }; };
+            lt_code.getDomFather(aHR).onmouseleave = function () { aHR.onmousemove = function () { }; };
         }
         aHR.onmouseup = function () { aHR.onmousemove = function () { }; };
         aHG.onmousedown = function (e) {
@@ -467,15 +467,15 @@
                     aValueG = move;
                 }
                 aValueG = lt_code.getNum(aValueG);
-                aHG.style.left = (25 + aValueG / 255 * 100).toString() + "px";
-                aHTG.style.width = (aValueG / 255 * 100 + 3).toString() + "px";
+                aHG.style.left = lt_code.getNum(25 + aValueG / 255 * 100).toString() + "px";
+                aHTG.style.width = lt_code.getNum(aValueG / 255 * 100 + 3).toString() + "px";
                 aValueAll = "rgb(" + aValueR + "," + aValueG + "," + aValueB + ")";
                 directionalLight.color.set(aValueAll);
                 aAll.innerHTML = lt_code.color_change(aValueAll);
                 var acolor = lt_code.getAll2(".acolor", lt_code.getDomFather(aAll));
                 acolor.style.backgroundColor = aValueAll;
             }
-            aHG.onmouseleave = function () { aHG.onmousemove = function () { }; };
+            lt_code.getDomFather(aHG).onmouseleave = function () { aHG.onmousemove = function () { }; };
         }
         aHG.onmouseup = function () { aHG.onmousemove = function () { }; };
         aHB.onmousedown = function (e) {
@@ -494,15 +494,15 @@
                     aValueB = move;
                 }
                 aValueB = lt_code.getNum(aValueB);
-                aHB.style.left = (25 + aValueB / 255 * 100).toString() + "px";
-                aHTB.style.width = (aValueB / 255 * 100 + 3).toString() + "px";
+                aHB.style.left = lt_code.getNum(25 + aValueB / 255 * 100).toString() + "px";
+                aHTB.style.width = lt_code.getNum(aValueB / 255 * 100 + 3).toString() + "px";
                 aValueAll = "rgb(" + aValueR + "," + aValueG + "," + aValueB + ")";
                 directionalLight.color.set(aValueAll);
                 aAll.innerHTML = lt_code.color_change(aValueAll);
                 var acolor = lt_code.getAll2(".acolor", lt_code.getDomFather(aAll));
                 acolor.style.backgroundColor = aValueAll;
             }
-            aHB.onmouseleave = function () { aHB.onmousemove = function () { }; };
+            lt_code.getDomFather(aHB).onmouseleave = function () { aHB.onmousemove = function () { }; };
         }
         aHB.onmouseup = function () { aHB.onmousemove = function () { }; };
 
